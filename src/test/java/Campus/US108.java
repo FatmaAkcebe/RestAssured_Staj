@@ -99,8 +99,8 @@ public class US108 extends Parent{
     @Test(dependsOnMethods = "CreateEducationStandartNegative")
     public void EditEducationStandart(){
 
-        eduStdName="ummet_egitim_grubu"+randomUreteci.number().digits(5);
-        eduStdDescription="ummet_egitim_grubu_aciklama"+randomUreteci.number().digits(5);
+        eduStdName="ummet_egitim_grubu_"+randomUreteci.number().digits(5);
+        eduStdDescription="ummet_egitim_grubu_aciklama_"+randomUreteci.number().digits(5);
 
         Map<String, String> CreateEduStds = new HashMap<>();
         CreateEduStds.put("id", eduStdID );
